@@ -40,6 +40,7 @@ Nothing is treated as final until it passes an audit you can inspect: exact quer
 | `fulltext-manuscript-section` | Writes manuscript sections backed only by full-text-verified sources. |
 | `write-review` | Drafts reviews aligned with the target journal's current reviewer guidance. |
 | `evidence-workflow-control-loop` | Generic controlled loop producing a researcher decision package. |
+| `read-pdf` | Extracts text/markdown from PDFs (poppler, markitdown, OCR) so agents can read attachments. |
 
 ### Rubrics
 
