@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+venv/
+.env
+
+# Personal writing-style profile — not for publication
+Personalise.md

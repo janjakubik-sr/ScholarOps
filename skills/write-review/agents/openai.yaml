@@ -1,0 +1,4 @@
+interface:
+  display_name: "Write Review"
+  short_description: "Draft a balanced journal-standard peer review"
+  default_prompt: "Use $write-review to draft a concise, balanced peer review."

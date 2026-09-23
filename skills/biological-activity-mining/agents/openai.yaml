@@ -1,0 +1,4 @@
+interface:
+  display_name: "Biological Activity Mining"
+  short_description: "Mine compound activity datasets and rank reanalysis candidates"
+  default_prompt: "Use $biological-activity-mining to search compound activity sources, inventory candidate datasets, audit relevance, and recommend what to reanalyze first."

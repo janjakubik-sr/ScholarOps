@@ -1,0 +1,4 @@
+interface:
+  display_name: "Check the Data"
+  short_description: "Audit study design, sample size, and statistics"
+  default_prompt: "Use $check-the-data to audit the data handling and statistical validity."

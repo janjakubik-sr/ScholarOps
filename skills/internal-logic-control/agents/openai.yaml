@@ -1,0 +1,4 @@
+interface:
+  display_name: "Internal Logic Control"
+  short_description: "Verify claims against data and cited evidence"
+  default_prompt: "Use $internal-logic-control to audit claim consistency and support."
