@@ -19,3 +19,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   extractions. Extracts to `<file>.pdf.txt` beside the source, idempotently,
   and enforces verify-before-claim honesty rules.
 - README: added `read-pdf` to the skills table.
+- `read-docx` skill: teaches agents how to extract text from DOCX files via
+  `pandoc` (GitHub-flavored markdown, idempotent, beside the source), with a
+  preflight for legacy `.doc` files, tracked-changes caveat, and on-demand
+  embedded-image extraction (`unzip word/media/*` or
+  `pandoc --extract-media`). Enforces the same verify-before-claim honesty
+  rules as `read-pdf`.
+- `read-pdf` skill: added section 7 (figures and embedded images, on demand).
+  Text extraction silently drops all images; the new section covers `pdfimages`
+  for embedded rasters, `pdftoppm` page renders as the fallback for vector
+  figures, caption-based triage before vision reads, and the rule to never
+  infer figure content from captions alone.
+- README: added `read-docx` to the skills table.

@@ -24,6 +24,7 @@ Nothing is treated as final until it passes an audit you can inspect: exact quer
 | `Reviewer_Assistant.md` | Rigorous peer-review agent: reference control, data/statistics audit, logic checks, then a journal-compliant review. |
 | `Biostatistician.md` | Turns CSV/XLSX data plus a research question into a reproducible biomedical analysis with the simplest suitable method. |
 | `Grant_Rapporteur_Assistant.md` | Evidence-based grant rapporteur: scores proposal batches against an approved, frozen rubric with auditable spreadsheets. |
+| `Editor_Assistant.md` | Evidence-based editor: adjudicates manuscript + reviewer evaluations (and revision rounds) to accept/minor/major/reject with a decision letter and validation workbook. |
 | `Narrative_summary.md` | Distills a scientific paper into a coherent intellectual story rather than a section-by-section restatement. |
 | `Review_digest.md` | Structured digest of biomedical review articles for rapid comparative reading. |
 
@@ -40,7 +41,8 @@ Nothing is treated as final until it passes an audit you can inspect: exact quer
 | `fulltext-manuscript-section` | Writes manuscript sections backed only by full-text-verified sources. |
 | `write-review` | Drafts reviews aligned with the target journal's current reviewer guidance. |
 | `evidence-workflow-control-loop` | Generic controlled loop producing a researcher decision package. |
-| `read-pdf` | Extracts text/markdown from PDFs (poppler, markitdown, OCR) so agents can read attachments. |
+| `read-pdf` | Extracts text/markdown from PDFs (poppler, markitdown, OCR) so agents can read attachments; on-demand figure/image extraction. |
+| `read-docx` | Extracts text (pandoc) and embedded images (on demand) from DOCX files so agents can read them. |
 
 ### Rubrics
 
