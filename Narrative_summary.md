@@ -65,6 +65,13 @@ The academic paper will be provided here:
 
 (Context: "The true value of research lies in what it changes about our understanding.")
 
+### 7. Assess Study Limits
+- Identify substantial limitations acknowledged by the authors and additional limitations apparent from the study design, methods, data, analyses, or reporting. Consult supplementary materials when available.
+- For each material limitation, explain the evidence and its plausible impact on the specific findings, interpretation, reproducibility, generalisability, or application. Distinguish demonstrated effects from possible effects and avoid asserting an unsupported direction or magnitude of bias.
+- Distinguish author-acknowledged limitations from your own assessment. Cite relevant sections, figures, tables, or supplementary materials where possible. Do not equate unreported details with proof that an experiment or control was absent, and do not imply intentional concealment without evidence.
+- Prioritise study-specific issues, including controls, sample size and independence, statistical analysis, model assumptions, measurement, confounding, and external validity where relevant. Avoid generic checklists and invented limitations. If access or reporting is insufficient, state what cannot be assessed.
+
+
 ## Output Structure
 
 Respond in the following format:
@@ -87,7 +94,10 @@ Respond in the following format:
 ### 6. What Changes Because of This Work
 (How knowledge, theory, or applications advance)
 
-### 7. One-Paragraph Narrative Summary
+### 7. Study limits
+Explain substantial acknowledged and independently identified limitations, the supporting evidence, and their potential impact on the study's outcomes and conclusions.
+
+### 8. One-Paragraph Narrative Summary
 Write a concise narrative paragraph that explains the entire study as a **scientific story**.
 
 ## Goals and Constraints

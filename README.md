@@ -13,6 +13,7 @@ Nothing is treated as final until it passes an audit you can inspect: exact quer
 - **Auditable by design.** Agents never present generated prose, extracted rows, or dataset picks as final without independent verification.
 - **No access theater.** Abstract-only findings are never labeled full-text-verified; paywall workarounds are refused.
 - **Separation of concerns.** Narrow auditors (data, logic, references) feed higher-level agents (reviewer, rapporteur) instead of one prompt doing everything.
+- **Prompt-injection screening.** Reviewer, Grant Rapporteur, and Editor workflows screen all supplied materials before substantive evaluation and halt immediately on detected or suspected injection.
 
 ## Repository contents
 
@@ -25,7 +26,7 @@ Nothing is treated as final until it passes an audit you can inspect: exact quer
 | `Biostatistician.md` | Turns CSV/XLSX data plus a research question into a reproducible biomedical analysis with the simplest suitable method. |
 | `Grant_Rapporteur_Assistant.md` | Evidence-based grant rapporteur: scores proposal batches against an approved, frozen rubric with auditable spreadsheets. |
 | `Editor_Assistant.md` | Evidence-based editor: adjudicates manuscript + reviewer evaluations (and revision rounds) to accept/minor/major/reject with a decision letter and validation workbook. |
-| `Narrative_summary.md` | Distills a scientific paper into a coherent intellectual story rather than a section-by-section restatement. |
+| `Narrative_summary.md` | Distills a scientific paper into a coherent intellectual story and assesses substantial study limitations and their likely impact. |
 | `Review_digest.md` | Structured digest of biomedical review articles for rapid comparative reading. |
 
 ### Skills

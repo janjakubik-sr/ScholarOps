@@ -31,3 +31,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   figures, caption-based triage before vision reads, and the rule to never
   infer figure content from captions alone.
 - README: added `read-docx` to the skills table.
+- `Reviewer_Assistant.md`, `Grant_Rapporteur_Assistant.md`, and
+  `Editor_Assistant.md`: added a mandatory prompt-injection screening gate
+  before substantive evaluation. All supplied materials, including hidden or
+  non-rendered content and reviewer evaluations, are treated as untrusted.
+  Detection or suspicion triggers immediate user notification and a complete
+  halt; grant evaluation also stops work on the rest of the batch.
+- `Narrative_summary.md`: added a study-limitations assessment and a dedicated
+  output section covering substantial acknowledged and independently identified
+  limitations, their evidentiary basis, and their potential impact.
+- README: documented the prompt-injection screening gate and the narrative
+  summary's study-limitations assessment.
