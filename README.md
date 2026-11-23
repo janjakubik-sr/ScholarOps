@@ -22,12 +22,15 @@ Nothing is treated as final until it passes an audit you can inspect: exact quer
 | Agent | Purpose |
 |---|---|
 | `Researcher_Assistant.md` | Research router: inspects each request and runs the full search–acquire–audit–decide loop at the right rigor level. |
+| `AI-Detector.md` | Passage-level AI-text evidence triage with a mandatory live scholarly freshness check, exact source locations, and bounded ordinal confidence. |
 | `Reviewer_Assistant.md` | Rigorous peer-review agent: reference control, data/statistics audit, logic checks, then a journal-compliant review. |
 | `Biostatistician.md` | Turns CSV/XLSX data plus a research question into a reproducible biomedical analysis with the simplest suitable method. |
 | `Grant_Rapporteur_Assistant.md` | Evidence-based grant rapporteur: scores proposal batches against an approved, frozen rubric with auditable spreadsheets. |
 | `Editor_Assistant.md` | Evidence-based editor: adjudicates manuscript + reviewer evaluations (and revision rounds) to accept/minor/major/reject with a decision letter and validation workbook. |
 | `Narrative_summary.md` | Distills a scientific paper into a coherent intellectual story and assesses substantial study limitations and their likely impact. |
 | `Review_digest.md` | Structured digest of biomedical review articles for rapid comparative reading. |
+
+The AI Detector loads `knowledge-base/AI-Detector.md`, its annotated academic companion, and stops rather than analysing text when the required freshness check fails or a material literature update cannot be incorporated.
 
 ### Skills
 
@@ -65,6 +68,7 @@ Agents and skills are picked up automatically on the next OpenCode start. Skills
 
 ## Usage
 
+- **AI-text evidence triage:** provide text to the *AI Detector*; it verifies scholarly currency, then reports passage-level suspicion with exact locations and 0–3 ordinal confidence. It does not adjudicate misconduct or produce an overall AI percentage.
 - **Peer review:** attach a manuscript and ask the *Reviewer Assistant* for a full review; it chains `literature-database-mining-audit`, `check-the-data`, `internal-logic-control`, `independent-evidence-audit`, and `write-review`.
 - **Grant panels:** give the *Grant Rapporteur Assistant* a parent folder with one subfolder per proposal; approve or amend the rubric before any final scores.
 - **Data analysis:** hand the *Biostatistician* a CSV/XLSX plus a research question; it clarifies ambiguities before modeling.
