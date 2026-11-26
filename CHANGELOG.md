@@ -8,13 +8,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
-- `AI-Detector.md` and `knowledge-base/AI-Detector.md`: cautious passage-level
-  AI-text evidence triage backed by an annotated academic source ledger. A live,
-  fail-closed literature freshness check runs before every analysis. Outputs use
-  stable locations, verbatim spans, alternative explanations, source IDs, and an
-  explicit ordinal 0–3 confidence scale; text-only suspicion is never presented
-  as authorship proof or converted into an overall AI percentage.
-- README: documented the AI Detector and its companion knowledge base.
 - `read-pdf` skill: teaches agents how to extract text from PDF files when the
   built-in read tool cannot parse them. Provides a verified tool ladder:
   `pdftotext` in default reading-order mode for born-digital PDFs (correct for
@@ -49,3 +42,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   limitations, their evidentiary basis, and their potential impact.
 - README: documented the prompt-injection screening gate and the narrative
   summary's study-limitations assessment.
+
+### Removed
+
+- `AI-Detector.md` and its dedicated `knowledge-base/AI-Detector.md` companion
+  after the agent failed a basic behavior test. README inventory and usage
+  references were removed as well.
